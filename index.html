@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcode Scanning App</title>
+  <style>
+    /* Add your CSS styling here */
+  </style>
+</head>
+<body>
+  <h1>Barcode Scanning App</h1>
+  <div>
+    <label for="date">Date:</label>
+    <input type="date" id="date">
+    <label for="salesOrder">Sales Order:</label>
+    <input type="text" id="salesOrder">
+    <label for="barcodeInput">Scan Barcode:</label>
+    <input type="text" id="barcodeInput">
+  </div>
+  <div>
+    <p id="barcodeCount">Total Barcodes: 0</p>
+    <button id="downloadBtn">Download CSV</button>
+    <button id="historyBtn">View History</button>
+  </div>
+
+  <table id="barcodeTable">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Sales Order</th>
+        <th>Barcode</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data rows will be inserted here -->
+    </tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
